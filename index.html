@@ -457,9 +457,10 @@
           <div class="modal-list">
             <label for="name">Имя</label>
             <span class="modal-icon-box">
+              <input type="text" name="user-name" id="name" class="modal-input">
               <svg class="madal-icon">
                 <use href="./images/symbol-defs.svg#form-icon-person" width="18" height="18"></use></svg >
-              <input type="text" name="user-name" id="name">
+              
             </span>
           </div>
 
@@ -467,9 +468,10 @@
           <div class="modal-list">
             <label for="tel">Телефон</label>
             <span class="modal-icon-box">
+              <input type="tel" name="tel" id="tel" class="modal-input">
               <svg class="madal-icon">
                 <use href="./images/symbol-defs.svg#form-icon-phone" width="18" height="18"></use></svg >
-              <input type="tel" name="tel" id="tel">
+              
             </span>
           </div>
 
@@ -477,20 +479,25 @@
           <div class="modal-list">
             <label for="mail">Почта</label>
             <span class="modal-icon-box">
+              <input type="imail" name="mail" id="mail" class="modal-input">
               <svg class="madal-icon">
                 <use href="./images/symbol-defs.svg#form-icon-email" width="18" height="18"></use></svg >
-              <input type="imail" name="mail" id="mail">
+              
             </span>
           </div>
 
           <div class="modal-list">
           <label for="comment">Комментарий</label>
-          <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+          <textarea class="textarea" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
         </div>
-        <div class="modal-list">
+        <div class="modal-list-policy">
           <input type="checkbox" id="policy">
-          <label for="policy" class="modal-policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          <label for="policy" class="modal-policy">
+            Соглашаюсь с рассылкой и принимаю <a href="" class="modal-link">Условия договора</a> 
+
+          </label>
         </div>
+        <button type="submit" class="modal-button-submit button-cursor">Отправить</button>
         </form>
 
 

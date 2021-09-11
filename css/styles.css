@@ -831,37 +831,97 @@ opacity: 1;
     padding: 40px;
     width: 100%;
 }
-
-.modal-form textarea::placeholder {
+.textarea {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: gray;
+
+}
+
+.textarea::placeholder {
+   
     color: rgba(117, 117, 117, 0.5);
-    padding: 12px 16px;
-    
+      
+}
+
+.modal-input:focus,
+.modal-input:hover,
+.modal-input:active,
+.textarea:focus,
+.textarea:hover,
+.textarea:active {
+    border-color: var(--secondary-text-color);
+    outline: none;
+
+}
+
+.modal-input:focus + .madal-icon,
+.modal-input:hover + .madal-icon,
+.modal-input:active + .madal-icon {
+    fill: var(--secondary-text-color);
+
 }
 
 
 .modal-list {
 display: flex;
 flex-direction: column;
-margin: 10px;
+margin-bottom: 10px;
+margin-top: 10px;
 text-align: start;
 
 }
 
 .modal-icon-box {
     position: relative;
+    
     width: 100%;
-    height: 100%;
+    
 }
 
 .madal-icon {
     position: absolute;
+    display: inline-block;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+    width: 18px ;
+    height: 18px;
     
+}
+
+.modal-list-policy {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modal-policy {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-left: 7px;
+}
+
+.modal-link {
+    color: var(--secondary-text-color);
+}
+
+.modal-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 42px;
+    cursor: pointer;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 
 .modal-list label {
@@ -870,6 +930,25 @@ text-align: start;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
+}
+
+.modal-button-submit {
+    display: block;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--secondary-text-color);
+    color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 55px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    
+
 }
 
 .modal-list input {
